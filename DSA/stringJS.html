@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let t = "jasdshkrfrw";
+        let len = t.length; // length is a property
+        t = t.toUpperCase();    // function call
+
+        function hello(){
+            document.getElementById("abc").innerHTML = "length "+ len;
+            document.getElementById("def").innerHTML = "t= " + t;
+        }
+    </script>
+    <h2 id="abc">Will be replaced here</h2>
+    <h2 id="def">Another text</h2>
+    <button onclick="hello()">Click here!</button>
+</body>
+</html>

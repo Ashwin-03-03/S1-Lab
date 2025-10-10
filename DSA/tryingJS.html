@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="abc">Will be replaced.</h2>
+    <script>
+        function hello()
+        {
+
+            // let x = 10;        
+            // let y = 20;        
+            // let z = x + y;        
+            let i =  parseInt(document.getElementById("ip").value);
+            let j =  parseInt(document.getElementById("ip1").value);
+            // let m = Number(i) + Number(j);
+            let m = i + j;
+            // document.getElementById("abc").innerHTML = "Sum: " + m;
+
+            alert("Sum: " + m);
+        }
+        </script>
+        Enter number 1: </label><input type="number" id="ip"><br>
+        Enter number 2: <input type="number" id="ip1"><br><br>
+        <button onclick="hello();">Click here</button>
+</body>
+</html>
