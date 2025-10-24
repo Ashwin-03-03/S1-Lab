@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" onsubmit="my_function()" name="form1">
+        <input type="text" placeholder="Enter number" name="name" required>
+        <input type="submit" id="abc"></input>
+    </form>
+    <script>
+        function my_function(){
+           let x = document.forms["form1"]["name"].value;
+           alert(x);
+           if (isNaN(x))
+           alert("Please enter a valid number");
+        } 
+    </script>
+</body>
+</html>
